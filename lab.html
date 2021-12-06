@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guess number</title>
+</head>
+<body>
+<script type="text/javascript">
+	var input;
+	var intinput;
+	var rand = Math.floor(Math.random()*10+1);	
+	var	g = 0;
+
+	while(g == 0){
+		input = window.prompt("請蘇入數字(1-10之間唷)");
+		intinput = parseInt(input);
+		if(intinput == rand){
+			alert('你猜對惹 真蚌');
+			g = 1;
+		}else{
+			alert('你猜錯惹');
+		}
+	}
+	document.writeln('請按f5重整唷');
+
+</script>
+</body>
+</html>
